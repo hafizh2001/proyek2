@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('dasbord');
 });
+route::get('/test',function(){
+    return view('welcome');
+})->name('sest');
