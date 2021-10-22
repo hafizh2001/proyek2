@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('dasbord');
+    return view('/dashboardChild');
 });
 route::get('/test',function(){
     return view('welcome');
