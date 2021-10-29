@@ -14,6 +14,17 @@
 Route::get('/', function () {
     return view('/dashboardChild');
 });
-route::get('/test',function(){
+Route::get('/KeluarMasukProduk','LaporanController@getAll');
+Route::get('/DetailProduk',function(){
+    return view('detailProdukChild');
+});
+Route::get('/test',function(){
     return view('welcome');
 })->name('sest');
+Route::get('/SatuanProduk',function(){
+    return view('satuanProdukChild');
+});
+Route::get('/JenisTransaksi', function(){
+    return view ('jenisTransaksiChild');
+});
+route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');

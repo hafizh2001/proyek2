@@ -31,7 +31,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
     <div class="sidebar-brand-icon rotate-n-15">
         <!-- <i class="fas fa-laugh-wink"></i> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
@@ -46,7 +46,7 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="/">
         <i class="fas fa-fw fa-tachometer-alt"></i>  
         <span>Dashboard</span>
     </a>
@@ -70,14 +70,16 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu Gudang:</h6>
-            <a class="collapse-item" href="button.html" >Keluar Masuk Produk</a>
-            <a class="collapse-item" href="cards.html">Detail Produk</a>
+            <a class="collapse-item" href="KeluarMasukProduk" >Keluar Masuk Produk</a>
+            <a class="collapse-item" href="DetailProduk">Detail Produk</a>
+            <a class="collapse-item" href="SatuanProduk">Detail Satuan Produk</a>
+            <a class="collapse-item" href="JenisTransaksi">Jenis Transaksi</a>
         </div>
     </div>
 </li>
 
 <!-- Nav Item - Utilities Collapse Menu -->
-<li class="nav-item">
+<!-- <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
         aria-expanded="true" aria-controls="collapseUtilities">
         <i class="fas fa-fw fa-wrench"></i>
@@ -93,17 +95,20 @@
             <a class="collapse-item" href="utilities-other.html">Other</a>
         </div>
     </div>
-</li>
 
+</li>
+-->
 <!-- Divider -->
 <hr class="sidebar-divider">
 
 <!-- Heading -->
-<div class="sidebar-heading">
+<!-- <div class="sidebar-heading">
     Addons
 </div>
+-->
 
 <!-- Nav Item - Pages Collapse Menu -->
+<!--
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
         aria-expanded="true" aria-controls="collapsePages">
@@ -123,21 +128,24 @@
         </div>
     </div>
 </li>
+-->
 
 <!-- Nav Item - Charts -->
+<!--
 <li class="nav-item">
     <a class="nav-link" href="charts.html">
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Charts</span></a>
 </li>
-
+-->
 <!-- Nav Item - Tables -->
+<!--
 <li class="nav-item">
     <a class="nav-link" href="tables.html">
         <i class="fas fa-fw fa-table"></i>
         <span>Tables</span></a>
 </li>
-
+-->
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">
 
@@ -328,7 +336,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle"
                                     src="{{asset('asset/img/undraw_profile.svg')}}">
                             </a>
