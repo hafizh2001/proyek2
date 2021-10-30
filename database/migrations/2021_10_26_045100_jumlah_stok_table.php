@@ -15,10 +15,13 @@ class JumlahStokTable extends Migration
     {
        
         Schema::create('jumlahstoks', function (Blueprint $table) {
+            $table->bigIncrements('id_jumlahStok');
             $table->integer('id_produk');
             $table->integer('jumlah_stok_produk');
+            $table->integer('id_satuan');
             $table->timestamps();
             });
+
     }
 
     /**

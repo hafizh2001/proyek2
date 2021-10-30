@@ -15,11 +15,12 @@ class CreateLaporanTable extends Migration
     {
         Schema::create('laporans', function (Blueprint $table) {
             $table->bigIncrements('id_laporan');
-            $table->string('Uraian');
+            $table->string('uraian');
             $table->integer('id_produk');
             $table->integer('produk_masuk');
             $table->integer('produk_keluar');
             $table->integer('id_user');
+            $table->integer('id_satuan');
             $table->timestamps();
         });
     }

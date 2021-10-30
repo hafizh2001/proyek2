@@ -8,6 +8,9 @@ class produk extends Model
 {
     protected $table ="produks";
     protected $primarykey="id_produk";
-    protected $fillable=['id_produk','nama_produk'];
+    protected $fillable=['id_produk','nama_produk','id_jumlahStok'];
     
+    public function jumlahStok(){
+        return $this->belongsTo(produk::class);
+    }
 }

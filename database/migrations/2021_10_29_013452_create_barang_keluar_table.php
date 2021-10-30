@@ -18,6 +18,8 @@ class CreateBarangKeluarTable extends Migration
             $table->integer('id_laporan');
             $table->integer('id_produk');
             $table->integer('jumlah');
+            $table->integer('id_jumlah');
+            $table->integer('id_satuan');
             $table->timestamps();
         });
     }

@@ -14,8 +14,8 @@ class JenisTransaksiTable extends Migration
     public function up()
     {
         Schema::create('jenis_transaksis', function (Blueprint $table) {
-            $table->integer('id_transaksi');
-            $table->integer('jenis_transaksi');
+            $table->bigIncrements('id_transaksi');
+            $table->string('jenis_transaksi');
             $table->timestamps();
             });
     }
