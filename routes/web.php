@@ -15,19 +15,10 @@
   //  return view('/dashboardChild');
 //});
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
-Route::get('/DetailProduk',function(){
-    return view('detailProdukChild');
-});
+Route::get('/DetailProduk','DetailProdukController@getAll');
 Route::get('/test',function(){
     return view('welcome');
 })->name('sest');
-Route::get('/SatuanProduk',function(){
-    return view('satuanProdukChild');
-});
-Route::get('/JenisTransaksi', function(){
-    return view ('jenisTransaksiChild');
-});
+Route::get('/SatuanProduk','SatuanProdukController@getAll');
+Route::get('/JenisTransaksi','JenisTransaksiController@getAll');
 route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
