@@ -114,7 +114,7 @@
                     </div>
                     <!-- Content Row -->
                     <div class="row">
-                       <!-- <img  src="{{asset('asset/img/dashboard.svg')}}"alt="...">    -->
+                        <img  src="{{asset('asset/img/dashboard.svg')}}"alt="...">    
                     </div>
                     
                     
