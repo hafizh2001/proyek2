@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('/dashboardChild');
-});
+//Route::get('/', function () {
+  //  return view('/dashboardChild');
+//});
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
 Route::get('/DetailProduk',function(){
     return view('detailProdukChild');
@@ -28,3 +28,6 @@ Route::get('/JenisTransaksi', function(){
     return view ('jenisTransaksiChild');
 });
 route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
