@@ -19,19 +19,6 @@ Route::get('/DetailProduk','DetailProdukController@getAll');
 Route::get('/test',function(){
     return view('welcome');
 })->name('sest');
-<<<<<<< HEAD
 Route::get('/SatuanProduk','SatuanProdukController@getAll');
 Route::get('/JenisTransaksi','JenisTransaksiController@getAll');
 route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');
-=======
-Route::get('/SatuanProduk',function(){
-    return view('satuanProdukChild');
-});
-Route::get('/JenisTransaksi', function(){
-    return view ('jenisTransaksiChild');
-});
-route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
->>>>>>> fcb8e3af2e0a45434978168e57c6eeda4f36cbf1
