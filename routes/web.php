@@ -22,3 +22,5 @@ Route::get('/test',function(){
 Route::get('/SatuanProduk','SatuanProdukController@getAll');
 Route::get('/JenisTransaksi','JenisTransaksiController@getAll');
 route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
