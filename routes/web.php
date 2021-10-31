@@ -12,7 +12,7 @@
 */
 
 //Route::get('/', function () {
-  //  return view('/dashboardChild');
+    //return view('/dashboardChild');
 //});
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
 Route::get('/DetailProduk','DetailProdukController@getAll');
@@ -24,3 +24,6 @@ Route::get('/JenisTransaksi','JenisTransaksiController@getAll');
 route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', function () {
+    return view('auth.login');
+});
