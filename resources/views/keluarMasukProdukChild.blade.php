@@ -51,6 +51,7 @@
                                         @endforeach
                                     </tbody>
                                 </table>
+                                <button type="button" class="btn btn-success btn-lg btn-block">Tambah data</button>
                             </div>
                         </div>
                     </div>

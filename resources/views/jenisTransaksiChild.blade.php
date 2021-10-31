@@ -29,13 +29,18 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        @foreach($jenis_transaksi as $j)
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-              
+                                            <td>{{$j->jenis_transaksi}}</td>
+                                            <td>
+                                            <button type="button" class="btn btn-warning btn-sm">Ubah</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                                            </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
+                                <button type="button" class="btn btn-success btn-lg btn-block">Tambah Transaksi</button>
                             </div>
                         </div>
                     </div>

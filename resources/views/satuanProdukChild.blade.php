@@ -33,13 +33,19 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        @foreach ($satuan as $s)
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-              
+                                            <td>{{$s->nama_satuan}}</td>
+                                            <td>{{$s->nilai}}</td>
+                                            <td>
+                                            <button type="button" class="btn btn-warning btn-sm">Ubah</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                                            </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
+                                <button type="button" class="btn btn-success btn-lg btn-block">Tambah nilai Satuan</button>
                             </div>
                         </div>
                     </div>
