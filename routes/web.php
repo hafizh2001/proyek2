@@ -15,6 +15,7 @@
     //return view('/dashboardChild');
 //});
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
+//Route::get('');
 Route::get('/DetailProduk','DetailProdukController@getAll');
 Route::get('/test',function(){
     return view('welcome');
