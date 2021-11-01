@@ -10,4 +10,8 @@ class JenisTransaksiController extends Controller
         $jenis_transaksi=jenis_transaksi::All();
         return view('jenisTransaksiChild',['jenis_transaksi'=>$jenis_transaksi]);
     }
+    
+    public function tambahData(){
+        return view('tambahJenisTransaksiChild');
+    }
 }

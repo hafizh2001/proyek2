@@ -45,7 +45,7 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <button type="button" class="btn btn-success btn-lg btn-block">Tambah nilai Satuan</button>
+                                <a href='TambahJenisTransaksi' class="btn btn-success btn-lg btn-block" href="#" role="button">Tambah Produk Baru</a>
                             </div>
                         </div>
                     </div>

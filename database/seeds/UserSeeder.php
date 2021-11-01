@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
-class LaporanTableSeeder extends Seeder
+use \App\User;
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,8 @@ class LaporanTableSeeder extends Seeder
      */
     public function run()
     {
-        //factory(App\Laporan::class,5)->create();
+        $u= new \App\User;
+        $u->jenis_transaksi="Barang Keluar";
+        $u->save();
     }
 }

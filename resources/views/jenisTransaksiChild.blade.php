@@ -2,12 +2,11 @@
 @section('content')
 @parent
 <!-- Custom styles for this page -->
-<link href="{{asset('asset/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Jenis Transaksi</h1>
-                    <p class="mb-4">Berisikan Jenis transaksi yang ada<a target="_blank"
+                    <p class="mb-4">Berisikan Jenis transaksi yang ada di gudang (barang keluar dan barang masuk), digunakan sebagai penentuan jenis transaksi barang </p><a target="_blank"></a>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -19,28 +18,26 @@
                                     <thead>
                                         <tr>
                                             <th>Nama Jenis Transaksi</th>
-                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Nama Jenis Transaksi</th>
-                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         @foreach($jenis_transaksi as $j)
                                         <tr>
                                             <td>{{$j->jenis_transaksi}}</td>
-                                            <td>
-                                            <button type="button" class="btn btn-warning btn-sm">Ubah</button>
-                                            <button type="button" class="btn btn-danger btn-sm">Danger</button>
-                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <button type="button" class="btn btn-success btn-lg btn-block">Tambah Transaksi</button>
+                               <!-- <a href='TambahJenisTransaksi'> -->
+                                
+                               <!-- <button type="button" class="btn btn-success btn-lg btn-block">Tambah Transaksi</button>
+                                </a> -->
+                                
                             </div>
                         </div>
                     </div>

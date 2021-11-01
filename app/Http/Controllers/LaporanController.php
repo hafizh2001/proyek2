@@ -10,6 +10,11 @@ class LaporanController extends Controller
         $laporan=Laporan::all();
         return view('keluarMasukProdukChild',['laporan'=>$laporan]);
     }
+
+    public function create(){
+        return view('tambahLaporanChild');
+    }
+
     public function __construct()
     {
         $this->middleware('auth');

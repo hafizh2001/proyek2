@@ -51,7 +51,10 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <button type="button" class="btn btn-success btn-lg btn-block">Tambah data</button>
+                                <a href="/tambahTransaksi">
+                                <button   type="button" class="btn btn-success btn-lg btn-block">Tambah Transaksi</button>
+                                </a>
+                               
                             </div>
                         </div>
                     </div>
