@@ -33,4 +33,10 @@ class JenisTransaksiController extends Controller
         $jenis_transaksi->save();
         return redirect('JenisTransaksi');
     }
+
+    public function delete($id){
+        $jenis_transaksi=jenis_transaksi::find($id);
+        $jenis_transaksi->delete();
+        return redirect('JenisTransaksi');
+    }
 }

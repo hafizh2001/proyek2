@@ -26,6 +26,7 @@ route::get('tambah_jenis_transaksi','JenisTransaksiController@tambahData');
 route::post('create_jenis_transaksi','JenisTransaksiController@create');
 route::get('edit_transaksi_{id}','JenisTransaksiController@edit');
 route::post('update_jenis_transaksi_{id}','JenisTransaksiController@update');
+route::get('delete_transaksi_{id}','JenisTransaksiController@delete');
 //------------------End Jenis Transaksi Route----------------
 route::get('TambahLaporan','LaporanController@tambahData')->name('tambahLaporan');
 
