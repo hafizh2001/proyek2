@@ -14,7 +14,7 @@ class CreateLaporanTable extends Migration
     public function up()
     {
         Schema::create('laporans', function (Blueprint $table) {
-            $table->bigIncrements('id_laporan');
+            $table->bigIncrements('id');
             $table->string('uraian');
             $table->integer('id_produk');
             $table->integer('produk_masuk');

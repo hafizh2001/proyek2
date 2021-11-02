@@ -21,14 +21,14 @@
                                     <thead>
                                         <tr>
                                             <th>Nama Satuan</th>
-                                            <th>Nilai dalam Biji</th>
+                                            <th>Nilai dalam toples</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Nama Satuan</th>
-                                            <th>Nilai dalam Biji</th>
+                                            <th>Nilai dalam toples</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </tfoot>
@@ -38,8 +38,8 @@
                                             <td>{{$s->nama_satuan}}</td>
                                             <td>{{$s->nilai}}</td>
                                             <td>
-                                                <a href="ubah_satuan/{{$a->id_satuan}}" type="button" class="btn btn-warning btn-sm" >Ubah</a>
-                                                <a type="button" class="btn btn-danger btn-sm">hapus</a>
+                                                <a href="UbahSatuan_{{$s->id}}" type="button" class="btn btn-warning btn-sm" >Ubah</a>
+                                                <a href="delete_satuan_{{$s->id}}" type="button" class="btn btn-danger btn-sm">hapus</a>
                                             </td>
                                         </tr>
                                         @endforeach

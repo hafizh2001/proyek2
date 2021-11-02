@@ -39,13 +39,13 @@
                                             <td>{{$pr->id_jumlahStok}}</td>
                                             <td>
                                             <button type="button" class="btn btn-warning btn-sm">Ubah</button>
-                                            <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Hapus</button>
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <a href='TambahJenisTransaksi' class="btn btn-success btn-lg btn-block" href="#" role="button">Tambah Produk Baru</a>
+                                <a href='tambah_produk' class="btn btn-success btn-lg btn-block"  role="button">Tambah Produk Baru</a>
                             </div>
                         </div>
                     </div>

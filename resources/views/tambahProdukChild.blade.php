@@ -8,20 +8,19 @@
     <p>Periksa kembali sebelum menyimpan data.</p>
     <div class="card shadow mb-4">
         <div class="card-header mb-4">
-            <h6 class="m-0 font-wight-bold text-primary">Input Data Satuan Produk Baru</h6>
+            <h6 class="m-0 font-wight-bold text-primary">Input Data Produk Baru</h6>
         </div>
         <div class="card-body">
             <form action="CreateSatuan" method="post">
             @csrf
             <div class="form-group">
-                <label for="title">Nama Satuan Produk </label>
+                <label for="title">Nama Produk</label>
                 <input type="text" class="form-control" 
-                required="required" name="namaSatuan"></br>
-            </div>
-            <div class="form-group">
-                <label for="content">Nilai Satuan Produk (Jumlah dalam Toples)</label>
-                <input type="text" class="form-control" 
-                required="required" name="nilaiSatuan"></br>
+                required="required" name="nama_produk"></br>
+                <input type="hidden" class="form-control" 
+                required="required" name="jumlahStok" value="0"></br>
+                <input type="hidden" class="form-control" 
+                required="required" name="id_satuan" value="1">
             </div>
 
                 <button type="submit" name="add" class="btn btn-primary float-right">Tambah Data</button>

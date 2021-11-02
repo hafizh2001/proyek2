@@ -18,25 +18,31 @@
                                     <thead>
                                         <tr>
                                             <th>Nama Jenis Transaksi</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Nama Jenis Transaksi</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         @foreach($jenis_transaksi as $j)
                                         <tr>
                                             <td>{{$j->jenis_transaksi}}</td>
+                                            <td>
+                                            <a href="edit_transaksi_{{$j->id}}" type="button" class="btn btn-warning btn-sm">Ubah</a>
+                                            <a href="delete_transaksi_{{$j->id}}" type="button" class="btn btn-danger btn-sm">hapus</a>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
                                <!-- <a href='TambahJenisTransaksi'> -->
                                 
-                               <!-- <button type="button" class="btn btn-success btn-lg btn-block">Tambah Transaksi</button>
-                                </a> -->
+                               <a href='tambah_jenis_transaksi' type="button" class="btn btn-success btn-lg btn-block">Tambah Transaksi</a>
+                                 
                                 
                             </div>
                         </div>

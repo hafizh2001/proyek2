@@ -14,4 +14,23 @@ class JenisTransaksiController extends Controller
     public function tambahData(){
         return view('tambahJenisTransaksiChild');
     }
+
+    public function create(request $request){
+        jenis_transaksi::create([
+            'jenis_transaksi'=>$request->jenis_transaksi,
+        ]);
+        return redirect('JenisTransaksi');
+    }
+
+    public function edit($id){
+        $jenis_transaksi=jenis_transaksi::find($id);
+        return view('editJenisTransaksiChild',['jenis_transaksi'=>$jenis_transaksi]);
+    }
+
+    public function update($id,Request $request){
+        $jenis_transaksi=jenis_transaksi::find($id);
+        $jenis_transaksi->jenis_transaksi=$request->jenis_transaksi;
+        $jenis_transaksi->save();
+        return redirect('JenisTransaksi');
+    }
 }

@@ -11,8 +11,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $u= new \App\User;
-        $u->jenis_transaksi="Barang Keluar";
-        $u->save();
+
     }
 }

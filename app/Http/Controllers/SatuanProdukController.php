@@ -19,4 +19,23 @@ class SatuanProdukController extends Controller
         ]);
         return redirect('SatuanProduk');
     }
+
+    public function edit($id){
+        $satuan=satuan::find($id);
+        return view('editSatuanProdukChild',['satuan'=>$satuan]);
+    }
+    
+    public function update($id,Request $request){
+        $satuan=satuan::find($id);
+        $satuan->nama_satuan=$request->nama_satuan;
+        $satuan->nilai=$request->nilai;
+        $satuan->save();
+        return redirect('SatuanProduk');
+    }
+
+    public function delete($id){
+        $satuan=satuan::find($id);
+        $satuan->delete();
+        return redirect('SatuanProduk');
+    }
 }
