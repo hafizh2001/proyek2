@@ -11,9 +11,9 @@
 |
 */
 
-//Route::get('/', function () {
-    //return view('/dashboardChild');
-//});
+Route::get('user', function () {
+    return view('detailUserChild');
+});
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
 route::get('tambahTransaksi','LaporanController@create');
 
@@ -53,3 +53,6 @@ Route::get('/home', 'HomeController@index')->name('homse');
 Route::get('/', function () {
     return view('auth.login');
 });
+//--------------------karyawan---------------------------
+Route::get('/userr','UserController@getAll');
+
