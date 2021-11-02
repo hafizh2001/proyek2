@@ -17,6 +17,7 @@ class Produks extends Migration
             $table->bigIncrements('id_produk');
             $table->string('nama_produk');
             $table->integer('id_jumlahStok');
+            $table->integer('id_satuan');
             $table->timestamps();
             });
            

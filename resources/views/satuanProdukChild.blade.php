@@ -7,13 +7,13 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Satuan Produk</h1>
-                    <p class="mb-4">Laporan Keluar Masuk Data <a target="_blank"
+                    <p class="mb-4">Berisikan nilai satuan produk yang digunakan untuk penyimpanan produk di gudang<a target="_blank"
                             
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Laporan Keluar Masuk Produk</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Satuan Produk</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -38,14 +38,14 @@
                                             <td>{{$s->nama_satuan}}</td>
                                             <td>{{$s->nilai}}</td>
                                             <td>
-                                            <button type="button" class="btn btn-warning btn-sm">Ubah</button>
-                                            <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                                                <a href="ubah_satuan/{{$a->id_satuan}}" type="button" class="btn btn-warning btn-sm" >Ubah</a>
+                                                <a type="button" class="btn btn-danger btn-sm">hapus</a>
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <button type="button" class="btn btn-success btn-lg btn-block">Tambah nilai Satuan</button>
+                                <a href='TambahSatuanProduk' class="btn btn-success btn-lg btn-block" role="button">Tambah Nilai Satuan</a>
                             </div>
                         </div>
                     </div>
