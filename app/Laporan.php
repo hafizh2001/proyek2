@@ -18,8 +18,18 @@ class Laporan extends Model
         return $this->belongsTo(barang_masuk::class);
     }
 
+    public function satuan(){
+        return $this->belongsTo(satuan::class);
+    }
+
+    public function produk(){
+        return $this->hasMany(produk::class);
+    }
     public function jenisTransaksi(){
         return $this->belongsTo(jenis_transaksi::class);
+    }
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 
 }

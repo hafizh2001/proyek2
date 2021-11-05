@@ -13,5 +13,8 @@ class satuan extends Model
     public function produk(){
         return $this->hasMany(produk::class);
     }
+    public function laporan(){
+        return $this->hasMany(laporan::class);
+    }
 
 }

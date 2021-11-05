@@ -13,4 +13,7 @@ class produk extends Model
     public function satuan(){
         return $this->belongsTo(satuan::class);
     }
+    public function laporan(){
+        return $this->hasMany(laporan::class);
+    }
 }

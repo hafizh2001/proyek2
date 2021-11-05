@@ -11,7 +11,7 @@ use App\barang_keluar;
 class LaporanController extends Controller
 {
     public function getAll(){
-        $laporan=Laporan::all();
+        $laporan=Laporan::All();
         return view('keluarMasukProdukChild',['laporan'=>$laporan]);
     }
 
