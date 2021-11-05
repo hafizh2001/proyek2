@@ -50,8 +50,18 @@
                                         </tr>
                                         @endforeach
                                     </tbody>
+                                    <div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Input Data
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Barang Masuk</a>
+    <a class="dropdown-item" href="#">Barang Keluar</a>
+   
+</div>
                                 </table>
-<!-- Example split danger button -->
+
+
                             </div>
                         </div>
                     </div>
