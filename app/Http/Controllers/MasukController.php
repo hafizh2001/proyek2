@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\barang_masuk;
 class MasukController extends Controller
 {
     public function __construct()
@@ -11,8 +11,8 @@ class MasukController extends Controller
         $this->middleware('auth');
     }
     public function getAll(){
-        $masuk=barang_masuk::All();
-        return view('detailBarangMasuk',['masuk'=>$masuk]);
+        $produk=barang_masuk::All();
+        return view('detailBarangMasuk',['produk'=>$produk]);
     }
     
 }
