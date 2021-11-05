@@ -20,6 +20,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>Id Laporan</th>
                                             <th>Uraian</th>
                                             <th>Produk</th>
                                             <th>Produk Masuk</th>
@@ -30,6 +31,7 @@
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>Id Laporan</th>
                                             <th>Uraian</th>
                                             <th>Produk</th>
                                             <th>Produk Masuk</th>
@@ -41,6 +43,7 @@
                                     <tbody>
                                     @foreach($laporan as $l)
                                         <tr>
+                                            <td>{{$l->id}}</td>
                                             <td>{{$l->uraian}}</td>
                                             <td>{{$l->id_produk}}</td>
                                             <td>{{$l->produk_masuk}}</td>

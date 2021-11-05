@@ -22,13 +22,12 @@ class LaporanController extends Controller
     }
     public function createLaporanMasuk(request $request){
         Laporan::create([
-            'Uraian'=>$request->uraian,
+            'uraian'=>$request->uraian,
             'id_produk'=>$request->id_produk,
             'produk_masuk' =>$request->produk_masuk,
             'produk_keluar' =>$request->produk_keluar,
             'id_satuan' =>$request->id_satuan,
             'id_user'=>$request->id_user,
-            
         ]);
         $barang_masuk=barang_masuk::find($request->id_produk);
         $produk=produk::find($request->id_produk);

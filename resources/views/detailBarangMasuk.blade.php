@@ -19,7 +19,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            
+                                            <th>Id Transaksi</th>
                                             <th>Nama Produk</th>
                                             <th>Jumlah</th>
                                             <th>Satuan</th>
