@@ -28,7 +28,6 @@ class SatuanProdukController extends Controller
     public function update($id,Request $request){
         $satuan=satuan::find($id);
         $satuan->nama_satuan=$request->nama_satuan;
-        $satuan->nilai=$request->nilai;
         $satuan->save();
         return redirect('SatuanProduk');
     }

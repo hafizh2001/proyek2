@@ -36,10 +36,10 @@
                                         @foreach($produk as $pr)
                                         <tr>
                                             <td>{{$pr->nama_produk}}</td>
-                                            <td>{{$pr->id_jumlahStok}}</td>
+                                            <td>{{$pr->jumlahStok}}</td>
                                             <td>
-                                            <button type="button" class="btn btn-warning btn-sm">Ubah</button>
-                                            <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                                            <a href="ubah_produk_{{$pr->id}}" type="button" class="btn btn-warning btn-sm">Ubah</a>
+                                            <a href="delete_produk_{{$pr->id}}" type="button" class="btn btn-danger btn-sm">Hapus</a>
                                             </td>
                                         </tr>
                                         @endforeach

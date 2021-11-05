@@ -15,9 +15,9 @@ class Produks extends Migration
     {
         Schema::create('produks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_produk');
+            $table->string('nama_produk')->unique();
             $table->integer('jumlahStok');
-            $table->integer('id_satuan');
+            $table->string('satuan');
             $table->timestamps();
             });
            

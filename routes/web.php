@@ -14,9 +14,12 @@
 //Route::get('/', function () {
     //return view('/dashboardChild');
 //});
+//------------------Start Laporan Transaksi-----------------
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
 route::get('tambahTransaksi','LaporanController@create');
 
+
+//------------------End Laporan Transaksi
 Route::get('/test',function(){
     return view('welcome');
 })->name('sest');
@@ -45,11 +48,17 @@ route::get('delete_satuan_{id}','SatuanProdukController@delete');
 Route::get('/DetailProduk','DetailProdukController@getAll');
 Route::get('tambah_produk','DetailProdukController@tambah');
 Route::post('create_produk','DetailProdukController@create');
-
+route::get('ubah_produk_{id}','DetailProdukController@edit');
+route::post('update_produk_{id}','DetailProdukController@update');
+route::get('delete_produk_{id}','DetailProdukController@delete');
 //-------------------End Produk Route----------------------------
 
+//-------------------Start Barang Masuk Route-------------------
+route::get('barang_masuk','BarangMasukController@getAll');
+
+//--------------------------------------------------------------
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('homse');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', function () {
     return view('auth.login');
 });

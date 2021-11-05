@@ -8,7 +8,10 @@ class satuan extends Model
 {
     protected $table ="Satuans";
     protected $primarykey="id";
-    protected $fillable=['id','nama_satuan','nilai'];
+    protected $fillable=['id','nama_satuan'];
     
+    public function produk(){
+        return $this->hasMany(produk::class);
+    }
 
 }

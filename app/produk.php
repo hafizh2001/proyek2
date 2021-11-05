@@ -8,9 +8,9 @@ class produk extends Model
 {
     protected $table ="produks";
     protected $primarykey="id";
-    protected $fillable=['id','nama_produk','jumlahStok','id_satuan'];
+    protected $fillable=['id','nama_produk','jumlahStok','satuan'];
 
-    public function jumlahStok(){
-        return $this->belongsTo(produk::class);
+    public function satuan(){
+        return $this->belongsTo(satuan::class);
     }
 }

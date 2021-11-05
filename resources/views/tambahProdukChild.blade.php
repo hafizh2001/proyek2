@@ -11,7 +11,7 @@
             <h6 class="m-0 font-wight-bold text-primary">Input Data Produk Baru</h6>
         </div>
         <div class="card-body">
-            <form action="CreateSatuan" method="post">
+            <form action="create_produk" method="post">
             @csrf
             <div class="form-group">
                 <label for="title">Nama Produk</label>
@@ -19,8 +19,12 @@
                 required="required" name="nama_produk"></br>
                 <input type="hidden" class="form-control" 
                 required="required" name="jumlahStok" value="0"></br>
-                <input type="hidden" class="form-control" 
-                required="required" name="id_satuan" value="1">
+                <label for="title">Satuan</label>
+                <select name="satuan" class="form-control">
+                    @foreach($satuan as $s)
+                    <option>{{$s->nama_satuan}}</option>
+                    @endforeach
+                </select>
             </div>
 
                 <button type="submit" name="add" class="btn btn-primary float-right">Tambah Data</button>

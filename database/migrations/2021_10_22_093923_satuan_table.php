@@ -15,8 +15,7 @@ class SatuanTable extends Migration
     {
         Schema::create('satuans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_satuan');
-            $table->integer('nilai');
+            $table->string('nama_satuan')->unique();
             $table->timestamps();
             });
     }
