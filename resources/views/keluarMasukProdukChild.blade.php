@@ -59,7 +59,7 @@
   </button>
   <div class="dropdown-menu">
     <a class="dropdown-item" href="tambah_laporan_produk_masuk">Produk Masuk</a>
-    <a class="dropdown-item" href="#">Produk Keluar</a>
+    <a class="dropdown-item" href="tambah_laporan_produk_keluar">Produk Keluar</a>
    
 </div>
                                 </table>
