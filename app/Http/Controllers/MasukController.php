@@ -11,8 +11,8 @@ class MasukController extends Controller
         $this->middleware('auth');
     }
     public function getAll(){
-        $produk=barang_masuk::All();
-        return view('detailBarangMasuk',['produk'=>$produk]);
+        $barang_masuk=barang_masuk::All();
+        return view('detailBarangMasuk',['barang_masuk'=>$barang_masuk]);
     }
     
 }

@@ -19,27 +19,28 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Id Produk</th>
-                                            <th>nama Produk</th>
-                                            <th></th>
+                                            
+                                            <th>Nama Produk</th>
+                                            <th>Jumlah</th>
+                                            <th>Satuan</th>
+                                            <th>User</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Id Produk</th>
-                                            <th>jumlah Stok</th>
-
-                                            
+                                            <th>Nama Produk</th>
+                                            <th>Jumlah</th>
+                                            <th>Satuan</th>
+                                            <th>User</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        @foreach($produk as $pr)
+                                        @foreach($barang_masuk as $pr)
                                         <tr>
-                                            <td>{{$pr->id_produk}}</td>
-                                            <td>{{$pr->nama_produkk}}</td>
-                                            <td>
-                                            
-                                            </td>
+                                            <td>{{$pr->nama_produk}}</td>
+                                            <td>{{$pr->jumlah}}</td>
+                                            <td>{{$pr->id_satuan}}</td>
+                                            <td>{{$pr->id_user}}</td>
                                         </tr>
                                         @endforeach
                                     </tbody>
