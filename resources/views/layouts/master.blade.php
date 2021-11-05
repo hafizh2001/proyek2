@@ -72,7 +72,7 @@
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu Gudang:</h6>
             <a class="collapse-item" href="keluar" >Barang Keluar</a>
-            <a class="collapse-item" href="masuk" >IBarang Masuk</a>
+            <a class="collapse-item" href="masuk" >Barang Masuk</a>
             <a class="collapse-item" href="KeluarMasukProduk" >Keluar Masuk Produk</a>
             <a class="collapse-item" href="DetailProduk">Detail Produk</a>
             <a class="collapse-item" href="SatuanProduk">Detail Satuan Produk</a>
