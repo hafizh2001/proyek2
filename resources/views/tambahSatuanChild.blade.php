@@ -20,7 +20,7 @@
             </div>
             <div class="form-group" id="only-number">
                 <label for="content">Nilai Satuan Produk (Jumlah dalam Toples)</label>
-                <input id="number" placeholder="Input only number" type="number" class="form-control" 
+                <input id="number" placeholder="Masukkan Angka" type="number" class="form-control" 
                 required="required" name="nilaiSatuan"></br>
             </div>
                 <button type="submit" name="add" class="btn btn-primary float-right">Tambah Data</button>

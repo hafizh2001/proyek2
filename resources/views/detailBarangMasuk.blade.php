@@ -19,28 +19,33 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            
+                                            <!--<th>Id Transaksi</th>-->
                                             <th>Nama Produk</th>
                                             <th>Jumlah</th>
                                             <th>Satuan</th>
                                             <th>User</th>
+                                            <th>Tanggal</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <!--<th>Id Transaksi</th>-->
                                             <th>Nama Produk</th>
                                             <th>Jumlah</th>
                                             <th>Satuan</th>
                                             <th>User</th>
+                                            <th>Tanggal</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         @foreach($barang_masuk as $pr)
                                         <tr>
-                                            <td>{{$pr->nama_produk}}</td>
+                                            <!--<td>{{$pr->id_laporan}}</td>-->    
+                                            <td>{{$pr->id_produk}}</td>
                                             <td>{{$pr->jumlah}}</td>
                                             <td>{{$pr->id_satuan}}</td>
                                             <td>{{$pr->id_user}}</td>
+                                            <td>{{$pr->updated_at}}</td>
                                         </tr>
                                         @endforeach
                                     </tbody>

@@ -17,29 +17,35 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
+                                <thead>
                                         <tr>
-                                            <th>Id Produk</th>
-                                            <th>nama Produk</th>
-                                            <th></th>
+                                            <!--<th>Id Transaksi</th>-->
+                                            <th>Nama Produk</th>
+                                            <th>Jumlah</th>
+                                            <th>Satuan</th>
+                                            <th>User</th>
+                                            <th>Tanggal</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Id Produk</th>
-                                            <th>jumlah Stok</th>
-
-                                            
+                                            <!--<th>Id Transaksi</th>-->
+                                            <th>Nama Produk</th>
+                                            <th>Jumlah</th>
+                                            <th>Satuan</th>
+                                            <th>User</th>
+                                            <th>Tanggal</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        @foreach($produk as $pr)
+                                        @foreach($barang_keluar as $pr)
                                         <tr>
+                                            <!--<td>{{$pr->id_laporan}}</td>-->
                                             <td>{{$pr->id_produk}}</td>
-                                            <td>{{$pr->nama_produkk}}</td>
-                                            <td>
-                                            
-                                            </td>
+                                            <td>{{$pr->jumlah}}</td>
+                                            <td>{{$pr->id_satuan}}</td>
+                                            <td>{{$pr->id_user}}</td>
+                                            <td>{{$pr->updated_at}}</td>
                                         </tr>
                                         @endforeach
                                     </tbody>

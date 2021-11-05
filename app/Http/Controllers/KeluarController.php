@@ -11,7 +11,7 @@ class KeluarController extends Controller
         $this->middleware('auth');
     }
     public function getAll(){
-        $produk=barang_keluar::All();
-        return view('detailBarangKeluar',['produk'=>$produk]);
+        $barang_keluar=barang_keluar::All();
+        return view('detailBarangKeluar',['barang_keluar'=>$barang_keluar]);
     }
 }

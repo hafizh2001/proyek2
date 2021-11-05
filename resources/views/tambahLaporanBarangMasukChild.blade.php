@@ -15,7 +15,7 @@
             @csrf
             <div class="form-group">
                 <input type="hidden" class="form-control" 
-                required="required" name="Uraian" value="Produk Masuk"></br>
+                required="required" name="uraian" value="Produk Masuk">
                 <label for="title">Produk</label>
                 <select name="id_produk" class="form-control">
                     @foreach($produk as $s)
@@ -29,7 +29,7 @@
                 required="required" name="produk_keluar" value="0">
                 <input type="hidden" class="form-control" 
                 required="required" name="id_user" value="{{ Auth::user()->id }}">
-                <label for="title">Produk</label>
+                <label for="title">Satuan Produk</label>
                 <select name="id_satuan" class="form-control">
                     @foreach($satuan as $s)
                     <option>{{$s->id}}</option>
