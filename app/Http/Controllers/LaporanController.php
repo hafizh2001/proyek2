@@ -15,7 +15,7 @@ class LaporanController extends Controller
         return view('keluarMasukProdukChild',['laporan'=>$laporan]);
     }
 
-    public function tambah(){
+    public function tambahLaporanMasuk(){
         $produk=produk::All();
         $satuan=satuan::All();
         return view('tambahLaporanBarangMasukChild',['produk'=>$produk,'satuan'=>$satuan]);
