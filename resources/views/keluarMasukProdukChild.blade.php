@@ -46,7 +46,7 @@
                                             <td>{{$l->produk_masuk}}</td>
                                             <td>{{$l->produk_keluar}}</td>
                                             <td>{{$l->id_user}}</td>
-                                            <td>{{$l->created_at}}</td> 
+                                            <td>{{$l->updated_at}}</td> 
                                         </tr>
                                         @endforeach
                                     </tbody>

@@ -24,6 +24,7 @@
                                             <th>Jumlah</th>
                                             <th>Satuan</th>
                                             <th>User</th>
+                                            <th>Tanggal</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -32,6 +33,7 @@
                                             <th>Jumlah</th>
                                             <th>Satuan</th>
                                             <th>User</th>
+                                            <th>Tanggal</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -41,6 +43,7 @@
                                             <td>{{$pr->jumlah}}</td>
                                             <td>{{$pr->id_satuan}}</td>
                                             <td>{{$pr->id_user}}</td>
+                                            <td>{{$pr->updated_at}}</td>
                                         </tr>
                                         @endforeach
                                     </tbody>
