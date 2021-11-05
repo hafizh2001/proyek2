@@ -23,7 +23,7 @@
                                             <th>id</th>
                                             <th>nama karyawan</th>
                                             <th>email</th>
-                                            <th>Aksi</th>
+                                            
                                         </tr>
                                     </thead>
                                     
@@ -33,15 +33,12 @@
                                             <td>{{$pr->id}}</td>
                                             <td>{{$pr->name}}</td>
                                             <td>{{$pr->email}}</td>
-                                            <td>
-                                            <button type="button" class="btn btn-warning btn-sm">Ubah</button>
-                                            <button type="button" class="btn btn-danger btn-sm">Hapus</button>
-                                            </td>
+                                           
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <a href='#' class="btn btn-success btn-lg btn-block"  role="button">Tambah karyawan</a>
+                                
                             </div>
                         </div>
                     </div>
