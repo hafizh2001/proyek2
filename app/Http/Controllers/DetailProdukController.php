@@ -13,8 +13,8 @@ class DetailProdukController extends Controller
         $this->middleware('auth');
     }
     public function getAll(){
-        $produk=produk::with('satuan');
-        return view('detailProdukChild',compact('produk'));
+        $produk=produk::All();
+        return view('detailProdukChild',['produk'=>$produk]);
     }
     public function tambah(){
         $satuan=satuan::All();
