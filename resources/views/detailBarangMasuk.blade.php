@@ -44,7 +44,8 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <a href='tambah_barangMasuk' class="btn btn-success btn-lg btn-block"  role="button">Tambah Barang Masuk</a>
+                                
+                               
                             </div>
                         </div>
                     </div>
