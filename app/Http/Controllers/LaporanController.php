@@ -50,4 +50,35 @@ class LaporanController extends Controller
     {
         $this->middleware('auth');
     }
+    public function tambahLaporanKeluar(){
+        $produk=produk::All();
+        $satuan=satuan::All();
+        return view('tambahLaporanBarangKeluarChild',['produk'=>$produk,'satuan'=>$satuan]);
+    }
+    public function createLaporanKeluar(request $request){
+        Laporan::create([
+            'uraian'=>$request->uraian,
+            'id_produk'=>$request->id_produk,
+            'produk_masuk' =>$request->produk_masuk,
+            'produk_keluar' =>$request->produk_keluar,
+            'id_satuan' =>$request->id_satuan,
+            'id_user'=>$request->id_user,
+        ]);
+        $barang_keluar=barang_keluar::find($request->id_produk);
+        $produk=produk::find($request->id_produk);
+        $jumlah_a=$produk->jumlahStok;
+        $jumlah_b=$request->produk_keluar;
+        $jumlah_update=$jumlah_a-$jumlah_b;
+        barang_keluar::create([
+            'id_produk'=>$request->id_produk,
+            'jumlah'=>$request->produk_keluar,
+            'id_satuan'=>$request->id_satuan,
+            'id_user'=>$request->id_user,
+        ]);
+        
+        $produk->jumlahStok=$jumlah_update;
+        $produk->id_satuan=$request->id_satuan;
+        $produk->save();
+        return redirect('KeluarMasukProduk');
+    }
 }

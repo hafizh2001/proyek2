@@ -8,14 +8,14 @@
     <p>Pastikan data yang dimasukkan sudah benar.</p>
     <div class="card shadow mb-4">
         <div class="card-header mb-4">
-            <h6 class="m-0 font-wight-bold text-primary">Input Data Produk Baru</h6>
+            <h6 class="m-0 font-wight-bold text-primary">Input Data </h6>
         </div>
         <div class="card-body">
-            <form action="create_laporan_barang_masuk" method="post">
+            <form action="create_laporan_barang_keluar" method="post">
             @csrf
             <div class="form-group">
                 <input type="hidden" class="form-control" 
-                required="required" name="Uraian" value="Produk Keluar"></br>
+                required="required" name="uraian" value="Produk Keluar"></br>
                 <label for="title">Produk</label>
                 <select name="id_produk" class="form-control">
                     @foreach($produk as $s)
