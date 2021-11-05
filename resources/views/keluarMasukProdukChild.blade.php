@@ -41,7 +41,7 @@
                                     <tbody>
                                     @foreach($laporan as $l)
                                         <tr>
-                                            <td>{{$l->Uraian}}</td>
+                                            <td>{{$l->uraian}}</td>
                                             <td>{{$l->id_produk}}</td>
                                             <td>{{$l->produk_masuk}}</td>
                                             <td>{{$l->produk_keluar}}</td>

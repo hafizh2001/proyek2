@@ -8,7 +8,7 @@ class Laporan extends Model
 {
     protected $table="laporans";
     protected $primaryKey="id";
-    protected $fillable=['id','Uraian','id_produk','produk_masuk','produk_keluar','id_user','id_satuan'];
+    protected $fillable=['id','uraian','id_produk','produk_masuk','produk_keluar','id_user','id_satuan'];
 
     public function barang_keluar(){
         return $this->belongsTo(barang_keluar::class);

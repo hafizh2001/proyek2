@@ -22,7 +22,7 @@ class LaporanController extends Controller
     }
     public function createLaporanMasuk(request $request){
         Laporan::create([
-            'Uraian'=>$request->Uraian,
+            'Uraian'=>$request->uraian,
             'id_produk'=>$request->id_produk,
             'produk_masuk' =>$request->produk_masuk,
             'produk_keluar' =>$request->produk_keluar,
