@@ -17,7 +17,7 @@ class CreateBarangKeluarTable extends Migration
             $table->bigIncrements('id');
             $table->string('nama_produk')->unique();
             $table->integer('jumlah');
-            $table->string('satuan');
+            $table->integer('id_satuan');
             $table->timestamps();
         });
     }

@@ -20,9 +20,9 @@
                 <input type="hidden" class="form-control" 
                 required="required" name="jumlahStok" value="0"></br>
                 <label for="title">Satuan</label>
-                <select name="satuan" class="form-control">
+                <select name="id_satuan" class="form-control">
                     @foreach($satuan as $s)
-                    <option>{{$s->nama_satuan}}</option>
+                    <option>{{$s->id}}</option>
                     @endforeach
                 </select>
             </div>

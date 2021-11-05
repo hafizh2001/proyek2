@@ -24,7 +24,7 @@ class DetailProdukController extends Controller
         produk::create([
             'nama_produk'=>$request->nama_produk,
             'jumlahStok' =>$request->jumlahStok,
-            'satuan' =>$request->satuan,
+            'id_satuan' =>$request->id_satuan,
         ]);
         return redirect('DetailProduk');
     }

@@ -51,10 +51,7 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                <a href="/tambahTransaksi">
-                                <button   type="button" class="btn btn-success btn-lg btn-block">Tambah Transaksi</button>
-                                </a>
-                               
+<!-- Example split danger button -->
                             </div>
                         </div>
                     </div>
