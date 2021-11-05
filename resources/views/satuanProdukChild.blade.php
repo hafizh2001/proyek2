@@ -21,12 +21,14 @@
                                     <thead>
                                         <tr>
                                             <th>Nama Satuan</th>
+                                            <th>QTY </th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Nama Satuan</th>
+                                            <th>QTY </th>
                                             <th>Aksi</th>
                                         </tr>
                                     </tfoot>
@@ -34,6 +36,7 @@
                                         @foreach ($satuan as $s)
                                         <tr>
                                             <td>{{$s->nama_satuan}}</td>
+                                            <td>{{$s->jumlah_dalam_toples}}</td>
                                             <td>
                                                 <a href="UbahSatuan_{{$s->id}}" type="button" class="btn btn-warning btn-sm" >Ubah</a>
                                                 <a href="delete_satuan_{{$s->id}}" type="button" class="btn btn-danger btn-sm">hapus</a>

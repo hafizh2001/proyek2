@@ -19,7 +19,8 @@ class SatuanProdukController extends Controller
     public function create(request $request){
         satuan::create([
             'nama_satuan'=>$request->namaSatuan,
-            'nilai'=>$request->nilaiSatuan
+            'nilai'=>$request->nilaiSatuan,
+            'jumlah_dalam_toples'=>$request->nilaiSatuan,
         ]);
         return redirect('SatuanProduk');
     }
@@ -32,6 +33,7 @@ class SatuanProdukController extends Controller
     public function update($id,Request $request){
         $satuan=satuan::find($id);
         $satuan->nama_satuan=$request->nama_satuan;
+        $satuan->jumlah_dalam_toples->$request->nilaiSatuan;
         $satuan->save();
         return redirect('SatuanProduk');
     }

@@ -14,9 +14,11 @@
 Route::get('user', function () {
     return view('detailUserChild');
 });
+//-----------------Start Laporan Transaksi-------------------------
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
 route::get('tambahTransaksi','LaporanController@create');
-
+route::get('tambah_laporan_produk_masuk','LaporanController@tambah');
+route::post('create_laporan_barang_masuk','LaporanController@createLaporanMasuk');
 
 //------------------End Laporan Transaksi
 Route::get('/test',function(){

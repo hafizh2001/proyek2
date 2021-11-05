@@ -16,6 +16,7 @@ class SatuanTable extends Migration
         Schema::create('satuans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama_satuan')->unique();
+            $table->integer('jumlah_dalam_toples');
             $table->timestamps();
             });
     }

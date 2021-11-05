@@ -18,16 +18,18 @@
                 <input type="text" class="form-control" 
                 required="required" name="namaSatuan"></br>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="only-number">
                 <label for="content">Nilai Satuan Produk (Jumlah dalam Toples)</label>
-                <input type="text" class="form-control" 
+                <input id="number" placeholder="Input only number" type="number" class="form-control" 
                 required="required" name="nilaiSatuan"></br>
             </div>
-
                 <button type="submit" name="add" class="btn btn-primary float-right">Tambah Data</button>
             </form>
+
         </div>
+        <a href="SatuanProduk" type="button" name="add" class="btn btn-primary float-left">Kembali</a>
     </div>
+
     
         
 </div>

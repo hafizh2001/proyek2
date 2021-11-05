@@ -18,6 +18,11 @@
                 <input value="{{$satuan->nama_satuan}}" type="text" class="form-control" 
                 required="required" name="nama_satuan"></br>
             </div>
+            <div class="form-group">
+                <label for="content">Nilai Satuan Produk (Jumlah dalam Toples)</label>
+                <input  value="{{$satuan->jumlah_dalam_toples}}" type="text" class="form-control" 
+                required="required" name="nilaiSatuan"></br>
+            </div>
 
                 <button type="submit" name="edit" class="btn btn-primary float-right">Ubah Data</button>
             </form>

@@ -14,7 +14,7 @@
             <form action="CreateSatuan" method="post">
             @csrf
             <div class="form-group">
-                <label for="title">Na </label>
+                <label for="title">Nama Barang </label>
                 <input type="text" class="form-control" 
                 required="required" name="namaSatuan"></br>
             </div>

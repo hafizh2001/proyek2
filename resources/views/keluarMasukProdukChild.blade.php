@@ -55,8 +55,8 @@
     Input Data
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Barang Masuk</a>
-    <a class="dropdown-item" href="#">Barang Keluar</a>
+    <a class="dropdown-item" href="tambah_laporan_produk_masuk">Produk Masuk</a>
+    <a class="dropdown-item" href="#">Produk Keluar</a>
    
 </div>
                                 </table>
