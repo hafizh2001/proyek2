@@ -76,7 +76,7 @@
             <a class="collapse-item" href="KeluarMasukProduk" >Keluar Masuk Produk</a>
             <a class="collapse-item" href="DetailProduk">Detail Produk</a>
             <a class="collapse-item" href="SatuanProduk">Detail Satuan Produk</a>
-            <a class="collapse-item" href="JenisTransaksi">Jenis Transaksi</a>
+           <!-- <a class="collapse-item" href="JenisTransaksi">Jenis Transaksi</a>-->
         </div>
 
     </div>

@@ -15,7 +15,7 @@ class CreateBarangKeluarTable extends Migration
     {
         Schema::create('barang_keluars', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('id_laporan');
+            //$table->integer('id_laporan');
             $table->integer('id_produk');
             $table->integer('jumlah');
             $table->integer('id_satuan');
