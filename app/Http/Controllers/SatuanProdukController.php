@@ -5,6 +5,10 @@ use App\satuan;
 use Illuminate\Http\Request;
 class SatuanProdukController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function getAll(){
         $satuan=satuan::All();
         return view('satuanProdukChild',['satuan'=>$satuan]);
