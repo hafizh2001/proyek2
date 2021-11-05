@@ -56,3 +56,6 @@ Route::get('/', function () {
 //--------------------karyawan---------------------------
 Route::get('/userr','UserController@getAll');
 
+//---------------------masuk-------------------------------
+Route::get('/masuk', 'MasukController@getAll');
+Route::get('/keluar', 'KeluarController@getAll');
