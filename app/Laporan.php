@@ -19,17 +19,17 @@ class Laporan extends Model
     }
 
     public function satuan(){
-        return $this->belongsTo(satuan::class);
+        return $this->belongsTo(satuan::class,'id_satuan');
     }
 
     public function produk(){
-        return $this->hasMany(produk::class);
+        return $this->hasMany(produk::class,'id_produk');
     }
     public function jenisTransaksi(){
         return $this->belongsTo(jenis_transaksi::class);
     }
     public function user(){
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class,'id_user');
     }
 
 }
