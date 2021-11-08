@@ -22,10 +22,10 @@
                                         <tr>
                                             <th>Id Laporan</th>
                                             <th>Uraian</th>
-                                            <th>Produk</th>
+                                            <th>Id Produk</th>
                                             <th>Produk Masuk</th>
                                             <th>Produk Keluar</th>
-                                            <th>User</th> 
+                                            <th>Id User</th> 
                                             <th>Tanggal</th>
                                         </tr>
                                     </thead>
@@ -33,10 +33,10 @@
                                         <tr>
                                             <th>Id Laporan</th>
                                             <th>Uraian</th>
-                                            <th>Produk</th>
+                                            <th>Id Produk</th>
                                             <th>Produk Masuk</th>
                                             <th>Produk Keluar</th>
-                                            <th>User</th> 
+                                            <th>Id User</th> 
                                             <th>Tanggal</th>
                                         </tr>
                                     </tfoot>

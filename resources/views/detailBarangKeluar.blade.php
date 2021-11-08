@@ -20,20 +20,20 @@
                                 <thead>
                                         <tr>
                                             <!--<th>Id Transaksi</th>-->
-                                            <th>Nama Produk</th>
+                                            <th>Id Produk</th>
                                             <th>Jumlah</th>
-                                            <th>Satuan</th>
-                                            <th>User</th>
+                                            <th>Id Satuan</th>
+                                            <th>Id User</th>
                                             <th>Tanggal</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <!--<th>Id Transaksi</th>-->
-                                            <th>Nama Produk</th>
+                                            <th>Id Produk</th>
                                             <th>Jumlah</th>
-                                            <th>Satuan</th>
-                                            <th>User</th>
+                                            <th>Id Satuan</th>
+                                            <th>Id User</th>
                                             <th>Tanggal</th>
                                         </tr>
                                     </tfoot>
