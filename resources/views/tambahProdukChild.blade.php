@@ -22,7 +22,7 @@
                 <label for="title">Satuan</label>
                 <select name="id_satuan" class="form-control">
                     @foreach($satuan as $s)
-                    <option>{{$s->id}}</option>
+                    <option value="{{$s->id}}">{{$s->nama_satuan}}</option>
                     @endforeach
                 </select>
             </div>

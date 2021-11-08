@@ -6,14 +6,14 @@
 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Keluar Masuk Produk</h1>
-                    <p class="mb-4">Laporan Keluar Masuk Data <a target="_blank"
+                    <h1 class="h3 mb-2 text-gray-800">Transaksi Produk</h1>
+                    <p class="mb-4">Laporan Transaksi Produk <a target="_blank"
                             
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Laporan Keluar Masuk Produk</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Laporan Transaksi Produk</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">

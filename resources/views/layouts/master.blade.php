@@ -71,9 +71,9 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu Gudang:</h6>
-            <a class="collapse-item" href="keluar" >Barang Keluar</a>
-            <a class="collapse-item" href="masuk" >Barang Masuk</a>
-            <a class="collapse-item" href="KeluarMasukProduk" >Keluar Masuk Produk</a>
+            <a class="collapse-item" href="KeluarMasukProduk" >Transaksi Produk</a>
+            <a class="collapse-item" href="keluar" >Produk Keluar</a>
+            <a class="collapse-item" href="masuk" >Produk Masuk</a> 
             <a class="collapse-item" href="DetailProduk">Detail Produk</a>
             <a class="collapse-item" href="SatuanProduk">Detail Satuan Produk</a>
            <!-- <a class="collapse-item" href="JenisTransaksi">Jenis Transaksi</a>-->

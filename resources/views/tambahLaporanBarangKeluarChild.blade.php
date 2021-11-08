@@ -19,7 +19,7 @@
                 <label for="title">Produk</label>
                 <select name="id_produk" class="form-control">
                     @foreach($produk as $s)
-                    <option>{{$s->id}}</option>
+                    <option value="{{$s->id}}">{{$s->nama_produk}}</option>
                     @endforeach
                 </select><br>
                 <label for="title">Jumlah Produk Keluar </label>
@@ -32,7 +32,7 @@
                 <label for="title">Produk</label>
                 <select name="id_satuan" class="form-control">
                     @foreach($satuan as $s)
-                    <option>{{$s->id}}</option>
+                    <option value="{{$s->id}}">{{$s->nama_satuan}}</option>
                     @endforeach
                 </select><br>
                  
