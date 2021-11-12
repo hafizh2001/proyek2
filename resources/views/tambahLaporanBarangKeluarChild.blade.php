@@ -15,22 +15,24 @@
             @csrf
             <div class="form-group">
                 <input type="hidden" class="form-control" 
-                required="required" name="uraian" value="Produk Keluar"></br>
+                required="required" name="uraian" value="Produk Keluar">
                 <label for="title">Produk</label>
-                <select name="id_produk" class="form-control">
-                    @foreach($produk as $s)
-                    <option value="{{$s->id}}">{{$s->nama_produk}}</option>
-                    @endforeach
+                
+                <select name="produk_id" class="form-control">
+                @foreach($produk as $s)    
+                    <option value="{{$s->id}}">{{$s->nama_produk}} | Tersedia : {{$s->jumlahStok}} </option>
+                @endforeach    
                 </select><br>
                 <label for="title">Jumlah Produk Keluar </label>
+                
                 <input type="number" class="form-control" 
                 required="required" name="produk_keluar"></br>
                 <input type="hidden" class="form-control" 
                 required="required" name="produk_masuk" value="0">
                 <input type="hidden" class="form-control" 
-                required="required" name="id_user" value="{{ Auth::user()->id }}">
+                required="required" name="user_id" value="{{ Auth::user()->id }}">
                 <label for="title">Produk</label>
-                <select name="id_satuan" class="form-control">
+                <select name="satuan_id" class="form-control">
                     @foreach($satuan as $s)
                     <option value="{{$s->id}}">{{$s->nama_satuan}}</option>
                     @endforeach

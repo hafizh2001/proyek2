@@ -39,7 +39,7 @@
                                         <tr>
                                             <td>{{$pr->id}}</td>
                                             <td>{{$pr->nama_produk}}</td>
-                                            <td>{{$pr->jumlahStok}}</td>
+                                            <td>{{$pr->jumlahStok}} {{$pr->satuan->nama_satuan}}</td>
                                             <td>
                                             <a href="ubah_produk_{{$pr->id}}" type="button" class="btn btn-warning btn-sm">Ubah</a>
                                             <a href="delete_produk_{{$pr->id}}" type="button" class="btn btn-danger btn-sm">Hapus</a>

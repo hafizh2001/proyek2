@@ -8,7 +8,9 @@ class Laporan extends Model
 {
     protected $table="laporans";
     protected $primaryKey="id";
-    protected $fillable=['id','uraian','id_produk','produk_masuk','produk_keluar','id_user','id_satuan'];
+    protected $fillable=['id','uraian','produk_id','produk_masuk','produk_keluar','user_id','satuan_id',
+    //'created_at'
+];
 
     public function barang_keluar(){
         return $this->belongsTo(barang_keluar::class);
@@ -19,17 +21,17 @@ class Laporan extends Model
     }
 
     public function satuan(){
-        return $this->belongsTo(satuan::class,'id_satuan');
+        return $this->belongsTo(satuan::class);
     }
 
     public function produk(){
-        return $this->hasMany(produk::class,'id_produk');
+        return $this->belongsTo(produk::class);
     }
     public function jenisTransaksi(){
         return $this->belongsTo(jenis_transaksi::class);
     }
     public function user(){
-        return $this->belongsTo(User::class,'id_user');
+        return $this->belongsTo(User::class);
     }
 
 }

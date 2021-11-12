@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\produk;
+use App\satuan;
 class HomeController extends Controller
 {
     /**

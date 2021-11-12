@@ -8,6 +8,8 @@ use App\produk;
 use App\satuan;
 use App\barang_masuk;
 use App\barang_keluar;
+use Carbon\Carbon;
+use App\User;
 class LaporanController extends Controller
 {
     public function getAll(){
@@ -21,28 +23,33 @@ class LaporanController extends Controller
         return view('tambahLaporanBarangMasukChild',['produk'=>$produk,'satuan'=>$satuan]);
     }
     public function createLaporanMasuk(request $request){
+        $get_timestamp=Carbon::now();
         Laporan::create([
             'uraian'=>$request->uraian,
-            'id_produk'=>$request->id_produk,
+            'produk_id'=>$request->produk_id,
             'produk_masuk' =>$request->produk_masuk,
             'produk_keluar' =>$request->produk_keluar,
-            'id_satuan' =>$request->id_satuan,
-            'id_user'=>$request->id_user,
+            'satuan_id' =>$request->satuan_id,
+            'user_id'=>$request->user_id,
+            //'created_at'=>$get_timestamp,
         ]);
-        $barang_masuk=barang_masuk::find($request->id_produk);
-        $produk=produk::find($request->id_produk);
+        //$get_laporan=Laporan::All();
+        //$get_laporan_id=$get_laporan->where('created_at',$get_timestamp)->get();
+        $barang_masuk=barang_masuk::find($request->produk_id);
+        $produk=produk::find($request->produk_id);
         $jumlah_a=$produk->jumlahStok;
         $jumlah_b=$request->produk_masuk;
         $jumlah_update=$jumlah_a+$jumlah_b;
         barang_masuk::create([
-            'id_produk'=>$request->id_produk,
+            'produk_id'=>$request->produk_id,
+            //'laporan_id'=>$get_laporan_id->id,
             'jumlah'=>$request->produk_masuk,
-            'id_satuan'=>$request->id_satuan,
-            'id_user'=>$request->id_user,
+            'satuan_id'=>$request->satuan_id,
+            'user_id'=>$request->user_id,
         ]);
         
         $produk->jumlahStok=$jumlah_update;
-        $produk->id_satuan=$request->id_satuan;
+        $produk->satuan_id=$request->satuan_id;
         $produk->save();
         return redirect('KeluarMasukProduk');
     }
@@ -58,26 +65,26 @@ class LaporanController extends Controller
     public function createLaporanKeluar(request $request){
         Laporan::create([
             'uraian'=>$request->uraian,
-            'id_produk'=>$request->id_produk,
+            'produk_id'=>$request->produk_id,
             'produk_masuk' =>$request->produk_masuk,
             'produk_keluar' =>$request->produk_keluar,
-            'id_satuan' =>$request->id_satuan,
-            'id_user'=>$request->id_user,
+            'satuan_id' =>$request->satuan_id,
+            'user_id'=>$request->user_id,
         ]);
-        $barang_keluar=barang_keluar::find($request->id_produk);
-        $produk=produk::find($request->id_produk);
+        $barang_keluar=barang_keluar::find($request->produk_id);
+        $produk=produk::find($request->produk_id);
         $jumlah_a=$produk->jumlahStok;
         $jumlah_b=$request->produk_keluar;
         $jumlah_update=$jumlah_a-$jumlah_b;
         barang_keluar::create([
-            'id_produk'=>$request->id_produk,
+            'produk_id'=>$request->produk_id,
             'jumlah'=>$request->produk_keluar,
-            'id_satuan'=>$request->id_satuan,
-            'id_user'=>$request->id_user,
+            'satuan_id'=>$request->satuan_id,
+            'user_id'=>$request->user_id,
         ]);
         
         $produk->jumlahStok=$jumlah_update;
-        $produk->id_satuan=$request->id_satuan;
+        $produk->satuan_id=$request->satuan_id;
         $produk->save();
         return redirect('KeluarMasukProduk');
     }

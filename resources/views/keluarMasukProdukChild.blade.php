@@ -45,10 +45,10 @@
                                         <tr>
                                             <td>{{$l->id}}</td>
                                             <td>{{$l->uraian}}</td>
-                                            <td>{{$l->id_produk}}</td>
+                                            <td>{{$l->produk->nama_produk}}</td>
                                             <td>{{$l->produk_masuk}}</td>
                                             <td>{{$l->produk_keluar}}</td>
-                                            <td>{{$l->id_user}}</td>
+                                            <td>{{$l->user->name}}</td>
                                             <td>{{$l->updated_at}}</td> 
                                         </tr>
                                         @endforeach

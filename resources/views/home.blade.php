@@ -24,7 +24,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 {{$p->nama_produk}}</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{$p->jumlahStok}} {{$p->satuan}}</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{$p->jumlahStok}} {{$p->satuan->nama_satuan}}</div>
                                         </div>
                                         <div class="col-auto">
                                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="50" height="50"viewBox="0 0 172 172"style=" fill:#000000;">

@@ -20,20 +20,20 @@
                                     <thead>
                                         <tr>
                                             <!--<th>Id Transaksi</th>-->
-                                            <th>Id Produk</th>
+                                            <th>Nama Produk</th>
                                             <th>Jumlah</th>
-                                            <th>Id Satuan</th>
-                                            <th>Id User</th>
+                                            <th>Satuan</th>
+                                            <th>User</th>
                                             <th>Tanggal</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <!--<th>Id Transaksi</th>-->
-                                            <th>Id Produk</th>
+                                            <th>Nama Produk</th>
                                             <th>Jumlah</th>
-                                            <th>Id Satuan</th>
-                                            <th>Id User</th>
+                                            <th>Satuan</th>
+                                            <th>User</th>
                                             <th>Tanggal</th>
                                         </tr>
                                     </tfoot>
@@ -41,10 +41,10 @@
                                         @foreach($barang_masuk as $pr)
                                         <tr>
                                             <!--<td>{{$pr->id_laporan}}</td>-->    
-                                            <td>{{$pr->id_produk}}</td>
+                                            <td>{{$pr->produk->nama_produk}}</td>
                                             <td>{{$pr->jumlah}}</td>
-                                            <td>{{$pr->id_satuan}}</td>
-                                            <td>{{$pr->id_user}}</td>
+                                            <td>{{$pr->satuan->nama_satuan}}</td>
+                                            <td>{{$pr->user->name}}</td>
                                             <td>{{$pr->updated_at}}</td>
                                         </tr>
                                         @endforeach

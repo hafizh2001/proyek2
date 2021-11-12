@@ -17,7 +17,7 @@
                 <input type="hidden" class="form-control" 
                 required="required" name="uraian" value="Produk Masuk">
                 <label for="title">Produk</label>
-                <select name="id_produk" class="form-control">
+                <select name="produk_id" class="form-control">
                     @foreach($produk as $s)
                     <option value="{{$s->id}}">{{$s->nama_produk}}</option>
                     @endforeach
@@ -28,9 +28,9 @@
                 <input type="hidden" class="form-control" 
                 required="required" name="produk_keluar" value="0">
                 <input type="hidden" class="form-control" 
-                required="required" name="id_user" value="{{ Auth::user()->id }}">
+                required="required" name="user_id" value="{{ Auth::user()->id }}">
                 <label for="title">Satuan Produk</label>
-                <select name="id_satuan" class="form-control">
+                <select name="satuan_id" class="form-control">
                     @foreach($satuan as $s)
                     <option value="{{$s->id}}">{{$s->nama_satuan}}</option>
                     @endforeach

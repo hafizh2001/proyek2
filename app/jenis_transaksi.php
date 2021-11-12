@@ -10,7 +10,7 @@ class jenis_transaksi extends Model
     protected $primarykey="id";
     protected $fillable=['id','jenis_transaksi'];
      
-    public function laporan(){
-        return $this->hasMany(Laporan::class);
-    }
+    // public function laporan(){
+    //     return $this->hasMany(Laporan::class);
+    // }
 }
