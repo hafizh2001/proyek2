@@ -50,7 +50,7 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                
+                                {{$barang_masuk->links()}}
                                
                             </div>
                         </div>

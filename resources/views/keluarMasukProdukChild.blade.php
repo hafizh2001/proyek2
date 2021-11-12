@@ -63,8 +63,7 @@
    
 </div>
                                 </table>
-
-
+                                {{$laporan->links()}}
                             </div>
                         </div>
                     </div>

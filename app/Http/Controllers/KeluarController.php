@@ -11,7 +11,7 @@ class KeluarController extends Controller
         $this->middleware('auth');
     }
     public function getAll(){
-        $barang_keluar=barang_keluar::All();
+        $barang_keluar=barang_keluar::with(['produk','satuan','user'])->latest()->paginate(50);
         return view('detailBarangKeluar',['barang_keluar'=>$barang_keluar]);
     }
 }

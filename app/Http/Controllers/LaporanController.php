@@ -13,10 +13,9 @@ use App\User;
 class LaporanController extends Controller
 {
     public function getAll(){
-        $laporan=Laporan::All();
+        $laporan=Laporan::with(['produk','user','satuan'])->paginate(50);
         return view('keluarMasukProdukChild',['laporan'=>$laporan]);
     }
-
     public function tambahLaporanMasuk(){
         $produk=produk::All();
         $satuan=satuan::All();

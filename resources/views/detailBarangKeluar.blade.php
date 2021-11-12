@@ -51,7 +51,7 @@
                                     </tbody>
                                 </table>
                                 <!-- Example single danger button -->
-    
+                                {{$barang_keluar->links()}}
                             </div>
                         </div>
                     </div>
