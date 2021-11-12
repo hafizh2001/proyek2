@@ -22,7 +22,7 @@
                                         <tr>
                                             <th>Id Laporan</th>
                                             <th>Uraian</th>
-                                            <th>Id Produk</th>
+                                            <th>Nama Produk</th>
                                             <th>Produk Masuk</th>
                                             <th>Produk Keluar</th>
                                             <th>Id User</th> 
@@ -33,7 +33,7 @@
                                         <tr>
                                             <th>Id Laporan</th>
                                             <th>Uraian</th>
-                                            <th>Id Produk</th>
+                                            <th>Nama Produk</th>
                                             <th>Produk Masuk</th>
                                             <th>Produk Keluar</th>
                                             <th>Id User</th> 
