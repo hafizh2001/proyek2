@@ -14,6 +14,9 @@
 Route::get('user', function () {
     return view('detailUserChild');
 });
+
+//----------error page test---------
+route::get('ErrorHandling','ErrorController@index');
 //-----------------Start Laporan Transaksi-------------------------
 Route::get('/KeluarMasukProduk','LaporanController@getAll');
 route::get('tambahTransaksi','LaporanController@create');
